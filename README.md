@@ -17,7 +17,7 @@ Cette présentation a pour objectif de présenter les bases de la data visualiza
 
 * [Box plot]
 * [Pie chart]
-* [Buuble chart]
+* [Bubble chart]
 * [Sankey chart]
 * [Network chart]
 * [Sunburst chart]
