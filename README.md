@@ -8,6 +8,7 @@ Cette présentation a pour objectif de présenter les bases de la data visualiza
 
 * [Site Officiel D3] - Un rapide aperçu de D3
 * [Site de Mike Bostock] - Des articles détaillés à propos de D3
+* [bl.ocks.org] - Des projets utilisant D3 proposés par la communeauté
 
 ### E-books :
 
@@ -24,6 +25,7 @@ Cette présentation a pour objectif de présenter les bases de la data visualiza
 
 [Site Officiel D3]: <https://d3js.org/>
 [Site de Mike Bostock]: <https://bost.ocks.org/mike/>
+[bl.ocks.org]: <https://bl.ocks.org/>
 [ebook d3 v4]: <https://leanpub.com/d3-t-and-t-v4>
 [Box plot]: <https://bl.ocks.org/rjurney/e04ceddae2e8f85cf3afe4681dac1d74>
 [Pie chart]: <https://bl.ocks.org/mbostock/3887235>
