@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+
+    <title>D3.js | Data Driven Documents</title>
+
+    <link rel="stylesheet" href="./css/reveal.min.css">
+    <link rel="stylesheet" href="./css/theme/thoughtram.css" id="theme">
+    <link rel="stylesheet" href="./lib/css/zenburn.css">
+  </head>
+
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <section class="deck-slide" data-background-image="./img/d3logo.png" background-repeat="no-repeat">
+          <h1>D3.js</h1>
+          <h3>Data Driven Documents</h3>
+        </section>
+
+        <section class="about-slide">
+          <section>
+            <h2>Qu'est ce que D3.js ?</h2>
+            <ul>
+              <li>Librairie JavaScript</li>
+              <li>Manipuler & présenter des données</li>
+              <li>HTML, CSS et SVG</li>
+            </ul>
+            <p> </p>
+            <h3>Site officiel : <a href="https://d3js.org/" target="_blank">https://d3js.org/</a></h3>
+          </section>
+
+          <section>
+            <h3>Derrière ce package, Mike Bostock</h3>
+            <p>bl.ocks.org, TopoJSON, Crossfilter</p>
+            <p>Son site personnel : <a href="https://bost.ocks.org/mike/" target="_blank">https://bost.ocks.org/mike/</a></p>
+          </section>
+
+          <section>
+            
+          </section>
+        </section>
+
+        <section class="exemples">
+          <section>
+            <h2>Quelques exemples</h2>
+            <img src="./img/d3overview.png" alt="Box plot illustration" width="1000" height="350">
+          </section>
+
+          <section class="boxplot">
+              <img src="./img/boxPlot.png" alt="Box plot illustration" width="900" height="500">
+              <h3>Box plot</h3>
+          </section>
+
+          <section class="pie">
+              <img src="./img/pieChart.png" alt="Pie chart illustration" width="500" height="500">
+              <h3>Pie chart</h3>
+          </section>
+
+          <section class="bubble">
+              <img src="./img/bubbleChart.png" alt="Bubble chart illustration" width="500" height="500">
+              <h3>Bubble chart</h3>
+          </section>
+
+          <section class="sankey">
+            <img src="./img/sankeyChart.png" alt="Sankey chart illustration" width="900" height="500">
+              <h3>Sankey chart</h3>
+          </section>
+
+          <section class="network">
+            <img src="./img/networkChart.png" alt="Sankey chart illustration" width="900" height="500">
+              <h3>Sankey chart</h3>
+          </section>
+
+          <section class="sunburst">
+            <h3><a href="http://data.mycs.ninja/charts/pageviews_sunburst.html" target="_blank">Interactive sunburst chart</a></h3>
+          </section>
+
+        </section>
+
+        <section class="svg introduction">
+          <section>
+            <h2>Scalable Vector Graphics</h2>
+            <ul>
+              <li>Format de dessin vectoriel</li>
+              <li>Basé sur XML</li>
+              <li>Création de schémas, diagrammes, icônes et cartes</li>
+            </ul>
+          </section>
+
+          <section>
+            <h4>Avec HTML</h4>
+            <pre><code margin-left="200px">
+<svg width="100" height="100">
+  <circle cx="50" cy="50" r="50" fill="red" />
+</svg>
+            </code></pre>
+              <svg class="fragment" width="100" height="100">
+                <circle cx="50" cy="50" r="50" fill="red" />
+              </svg>
+          </section>
+          <section>
+            <h4>Avec JavaScript & D3</h4>
+            <pre><code>
+const svgSelection = d3.select(".circled3")
+  .append("svg")
+  .attr("width", 100)
+  .attr("height", 100);
+
+svgSelection.append("circle")
+  .attr("cx", 50)
+  .attr("cy", 50)
+  .attr("r", 50)
+  .style("fill", "purple");
+            </code></pre>
+            <div class="circled3"></div>
+            <script src="https://d3js.org/d3.v4.min.js"></script>
+            <script type="text/javascript">
+              const svgSelection = d3.select(".circled3")
+                .append("svg")
+                .attr("width", 100)
+                .attr("height", 100);
+
+              svgSelection.append("circle")
+                .attr("cx", 50)
+                .attr("cy", 50)
+                .attr("r", 50)
+                .style("fill", "purple");
+            </script>
+          </section>
+        </section>
+
+        <section>
+          <h2>La suite au prochain épisode !</h2>
+        </section>
+
+        <section>
+          <h3>Slides et ressources disponibles :
+            <a href="http://github.com/rprioul/d3-presentation/" target="_blank">http://github.com/rprioul/d3-presentation/</a>
+          </h3>
+        </section>
+      </div>
+    </div>
+
+    <script src="./lib/js/head.min.js"></script>
+    <script src="./js/reveal.min.js"></script>
+    <script src="./js/reveal.config.js"></script>
+
+  </body>
+</html>
