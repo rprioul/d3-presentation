@@ -85,29 +85,21 @@
 
         </section>
 
-        <section class="svg introduction">
+        <section class="la prochaine fois">
           <section>
-            <h2>Scalable Vector Graphics</h2>
-            <ul>
-              <li>Format de dessin vectoriel</li>
-              <li>Basé sur XML</li>
-              <li>Création de schémas, diagrammes, icônes et cartes</li>
-            </ul>
-          </section>
-
-          <section>
-            <h4>Avec HTML</h4>
-            <pre><code margin-left="200px">
-<svg width="100" height="100">
-  <circle cx="50" cy="50" r="50" fill="red" />
-</svg>
-            </code></pre>
-              <svg class="fragment" width="100" height="100">
-                <circle cx="50" cy="50" r="50" fill="red" />
-              </svg>
+            <h2>La prochaine fois :</h2>
           </section>
           <section>
-            <h4>Avec JavaScript & D3</h4>
+            <p>Eviter les mauvaises practices & réaliser des graphes clairs</p>
+            <div style="float: left;">
+              <img src="./img/badChart.png" alt="Sankey chart illustration" width="300" height="300">
+            </div>
+            <div style="float: right;">
+              <img src="./img/goodChart.png" alt="Sankey chart illustration" width="300" height="300">
+            </div>
+          </section>
+          <section>
+            <h4>Utilisation de D3</h4>
             <pre><code>
 const svgSelection = d3.select(".circled3")
   .append("svg")
@@ -120,30 +112,6 @@ svgSelection.append("circle")
   .attr("r", 50)
   .style("fill", "purple");
             </code></pre>
-            <div class="circled3"></div>
-            <script src="https://d3js.org/d3.v4.min.js"></script>
-            <script type="text/javascript">
-              const svgSelection = d3.select(".circled3")
-                .append("svg")
-                .attr("width", 100)
-                .attr("height", 100);
-
-              svgSelection.append("circle")
-                .attr("cx", 50)
-                .attr("cy", 50)
-                .attr("r", 50)
-                .style("fill", "purple");
-            </script>
-          </section>
-        </section>
-
-        <section>
-          <section>
-            <h2>La suite au prochain épisode !</h2>
-          </section>
-          <section>
-            <img src="./img/badChart.png" alt="Sankey chart illustration" width="300" height="300" style="float: left;">
-            <img src="./img/goodChart.png" alt="Sankey chart illustration" width="300" height="300" style="float: right;">
           </section>
         </section>
 
